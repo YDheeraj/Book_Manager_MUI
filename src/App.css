@@ -1,5 +1,6 @@
 
 
+
 .flex {
     background: "white";
      display:"flex";
@@ -9,24 +10,9 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+ @media only screen and (max-width: 500px) {
     .flex {
+      display: flex;
       flex-direction: column;
-      display: flex;
-    }
-  }
-
-  @media only screen and (min-width: 729px) {
-    .flex {
-      flex-direction: row;
-      display: flex;
-    }
-  }
-
-  @media only screen and (min-width: 1080px) {
-    .flex {
-        display: flex;
-      flex-direction: row;
-      justify-content: space-around;
     }
   }

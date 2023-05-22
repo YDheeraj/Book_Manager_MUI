@@ -76,6 +76,7 @@ const BookList = () => {
           </Typography>
           <form onSubmit={handleSubmit} className="flex">
             <TextField
+              style={{margin:"5px"}}
               size="small"
               type="text"
               name="title"
@@ -85,6 +86,7 @@ const BookList = () => {
               onChange={handleInput}
             />
             <TextField
+             style={{margin:"5px"}}
               size="small"
               type="text"
               name="author"
@@ -94,6 +96,7 @@ const BookList = () => {
               onChange={handleInput}
             />
             <TextField
+             style={{margin:"5px"}}
               size="small"
               type="number"
               autoComplete="off"
@@ -104,6 +107,7 @@ const BookList = () => {
             >
             </TextField>
             <TextField
+             style={{margin:"5px"}}
               size="small"
               type="text"
               name="isbn"
@@ -113,8 +117,10 @@ const BookList = () => {
               value={input.isbn}
               onChange={handleInput}
             />
-            <Button type="submit" variant="outlined" startIcon={<AddIcon></AddIcon>}>Create</Button>
-            <Button    style={{ color: 'red', borderColor: 'red' }}  variant="outlined" startIcon={<DeleteIcon />} onClick={deleteAll}>Clear All</Button> 
+            <div className="flex">
+            <Button style={{margin:"5px"}} type="submit" variant="outlined" startIcon={<AddIcon></AddIcon>}>Create</Button>
+            <Button    style={{ color: 'red', borderColor: 'red',margin:"5px" }}  variant="outlined" startIcon={<DeleteIcon />} onClick={deleteAll}>Clear All</Button>
+            </div> 
           </form>
         </Box>
       </Grid>
